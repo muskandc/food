@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Chivo+Mono:wght@300;500;700&family=Dancing+Script:wght@400;700&family=Lumanosimo&family=Mooli&family=Poppins:ital,wght@0,400;0,800;1,400&family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cedarville Cursive', cursive;
+        font-family: 'Chivo Mono', monospace;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Lumanosimo', cursive;
+        font-family: 'Mooli', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Young Serif', serif;
+}
+header{
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.navbar {
+    display: flex;
+    padding: 10px;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar li a{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+.logo{
+    text-decoration: none;
+    font-size: 20px;
+    color: darkred;
+}
+span{
+    color: black;
+    font-size: 33px;
+}
+#menu-icon{
+    display: none;
+}
+
+.main{
+    margin-top: 2rem;
+
+}
+.main1{
+   display: flex;
+   gap: 2rem;
+   margin-left: 3px;
+}
+.main2{
+    border-radius: 5px;
+    border: 1px solid aliceblue;
+    box-shadow: 5px 5px 5px rgb(126, 124, 124);
+    padding: 10px;
+}
+.main2 h5{
+    text-align: center;
+    font-size: 18px;
+    color: darkred;
+    text-transform: capitalize;
+}
+.footer{
+    margin-top: 7rem;
+}
+.footer1{
+    margin-left: 40%;
+}
+.footer-con{
+    display: flex;
+    list-style: none;
+}
+.footer-con li{
+    text-decoration: none;
+    padding: 5px;
+}
+.footer-icon{
+    display: flex;
+    margin-left: 5rem;
+}
+.footer-icon i{
+    background-color: darkred;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+.footer-director h4{
+    margin-left: 4rem;
+    color: darkred;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px)  {
+
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: -60%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: rgb(8, 8, 8);
+            box-shadow: 0px 2px 18px 0 rgb(129 162 182 / 20%);
+            transition: all .40s ease;
+       
+    }
+    .navbar.active{
+        top: 15%;
+    }
+    .navbar li{
+        width: 100%;
+        height: 40px;
+        border: 1px solid black;
+        background-color: gray;
+        padding: 5px;
+    }
+    .navbar li a{
+        color: white;
+         margin-bottom: 1rem;
+    }
+    .navbar li a:hover{
+        color: black;
+    }
+    .main1{
+        flex-direction: column;
+    }
+    
+
+
+}
